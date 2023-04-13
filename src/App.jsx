@@ -1,6 +1,7 @@
 import React from "react";
 import DragWithNpm from "./components/DragWithNpm";
 import DragWithCustom from "./components/DragWithCustom";
+import IndexHtml from "./components/IndexHtml";
 
 function App() {
 
@@ -9,8 +10,9 @@ function App() {
       <div className="App"> 
       <div className="importFile">
         <p>Here is import index.html file from public folder !</p>
-        {<iframe src="/index.html" title="Index" className="iframe-div"></iframe>}
+        <IndexHtml />
       </div>
+     
         <div>
           <DragWithCustom />
         </div>
